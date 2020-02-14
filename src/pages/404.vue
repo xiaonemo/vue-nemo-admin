@@ -22,7 +22,7 @@
   }
 </script>
 
-<style>
+<style scoped>
   .page {
     text-align: center;
   }

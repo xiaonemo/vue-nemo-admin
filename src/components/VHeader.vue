@@ -11,7 +11,7 @@
         </el-dropdown-menu>
       </el-dropdown>
     </div>
-    <div class="logout"><i class="el-icon-switch-button"></i> 退出登录</div>
+    <div class="logout" v-on:click="onLogout"><i class="el-icon-switch-button"></i> 退出登录</div>
   </div>
 </template>
 
@@ -22,6 +22,11 @@
         circleUrl: "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png",
         squareUrl: "https://cube.elemecdn.com/9/c2/f0ee8a3c7c9638a54940382568c9dpng.png",
         sizeList: ["large", "medium", "small"]
+      }
+    },
+    methods: {
+      onLogout: function(){
+        this.$router.push({path: 'login'})
       }
     }
   }
@@ -46,5 +51,8 @@
   }
   .el-icon-arrow-down {
     font-size: 12px;
+  }
+  .logout {
+    cursor: pointer;
   }
 </style>

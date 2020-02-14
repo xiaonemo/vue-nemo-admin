@@ -6,7 +6,7 @@ const data = {
                 {
                     icon: 'el-icon-lx-home',
                     index: 'dashboard',
-                    title: '系统首页',
+                    title: 'Dashboard',
                     url: '/dashboard'
                 },
                 {
@@ -44,39 +44,10 @@ const data = {
                     ]
                 },
                 {
-                    icon: 'el-icon-star-off',
-                    index: 'icon',
-                    title: '自定义图标',
-                    url: '/icon'
-                },
-                {
                     icon: 'el-icon-pie-chart',
                     index: 'charts',
                     title: 'schart图表',
                     url: '/charts'
-                },
-                {
-                    icon: 'el-icon-rank',
-                    index: '6',
-                    title: '拖拽组件',
-                    subs: [
-                        {
-                            index: 'drag',
-                            title: '拖拽列表',
-                            url: '/drag'
-                        },
-                        {
-                            index: 'dialog',
-                            title: '拖拽弹框',
-                            url: '/dialog'
-                        }
-                    ]
-                },
-                {
-                    icon: 'el-icon-lx-global',
-                    index: 'i18n',
-                    title: '国际化功能',
-                    url: '/i18n'
                 },
                 {
                     icon: 'el-icon-warning-outline',
@@ -96,11 +67,23 @@ const data = {
                     ]
                 },
                 {
-                    icon: 'el-icon-lx-redpacket_fill',
-                    index: '/donate',
-                    title: '支持作者',
-                    url: '/donate'
-                }
+                    icon: 'el-icon-rank',
+                    index: '6',
+                    title: '其他组件',
+                    subs: [
+                        {
+                            index: 'drag',
+                            title: '拖拽列表',
+                            url: '/drag'
+                        }
+                    ]
+                },
+                {
+                    icon: 'el-icon-star-off',
+                    index: 'icon',
+                    title: '自定义图标',
+                    url: '/icon'
+                },
             ]
         };
  
